@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designer 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<body>
+    <div class="loader">
+        <span></span>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo"><h1>Logo</h1></div>
+
+            <div class="menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li> <a href="#" class="active">Home</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="#">Blogs</a></li>
+                    <li> <a href="#">Portfolio</a></li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <div class="content">
+                <h1>Web Design</h1>
+                <p>Turn your ideas into visually captivating and responsive websites that stand out. Let’s build digital experiences that engage, inspire, and leave a lasting impression!</p>
+                <button><a href="#">Read More!</a></button>
+                <div class="icon">
+                    <i class="fab fa-facebook"><a href="#"></a></i>
+                    <i class="fab fa-twitter"><a href="#"></a></i>
+                    <i class="fab fa-pinterest"><a href="#"></a></i>
+                    <i class="fab fa-instagram"><a href="#"></a></i>
+                </div>
+            </div>
+            <div class="image">
+                <img src="Programming-pana.png" alt="">
+            </div>
+        </section>
+    </div>
+<script>
+    $(document).ready(function(){
+        $(window).on('load',function(){
+            $('.loader').fadeOut(1000);
+        });
+        $('ul li a').click(function(){
+            $('ul li a').removeClass('active');
+            $(this).addClass('active');
+        });
+        $('.menu i').click(function(){
+            $('header .navbar').slideToggle();
+            $(this).toggleClass('far fa-times');
+        });
+    });
+</script>
+</body>
+</html>
