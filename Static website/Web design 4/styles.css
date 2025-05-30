@@ -1,0 +1,155 @@
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(145deg, #4D0062 37.47%, #250074 93.82%);
+    overflow: hidden;
+}
+
+header{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; left: 0;
+    padding: 2rem, 5rem;
+}
+
+.fa-shopping-cart{
+    font-size: 3rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li{
+    margin: 1rem 1rem;
+    padding: .5rem;
+}
+
+nav ul li a{
+    font-size: 2rem;
+    color: #fff;
+    padding: .1rem 2rem;
+    border-radius: 2rem;
+    transition: 0.3s linear;
+}
+
+nav ul li a:hover{
+    background: #fff;
+    color: #333;
+    letter-spacing: .2rem;
+}
+
+.logo .fa-store{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.conatainer{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content{
+    color: #fff;
+    width: 40vw;
+    padding-top: 15rem;
+    font-style: italic;
+    margin-left: 2rem;
+}
+
+.content h1{
+    font-size: 5.5rem;
+}
+
+.content p{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+.image{
+    margin-top: -42rem;
+    margin-left: 70rem;
+}
+
+.image img{ 
+    width: 40vw;
+    height: 85vh;
+    animation: image 1s linear;
+}
+
+@keyframes image {
+    0%{
+        transform: translateY(-5rem);
+        opacity: 0%;
+    }
+}
+
+.buttons button{
+    background: white;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    transition: .2s linear;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    height: 3.5rem;
+    width: 12rem;
+}
+
+.buttons button:hover{
+    color: #fff;
+    background:none;
+    border: .2rem solid;
+    letter-spacing: .05rem;
+}
+
+.buttons a:nth-child(2) button{
+    margin-left: 2rem;
+}
+
+.icons{
+    padding-top: 5rem;
+    margin-left: 2rem;
+}
+
+.icons a{
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    background: #fff;
+    color: #333;
+    border-radius: 5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.icons a:hover{
+    color: #fff;
+    background:none;
+    border: .15rem solid;
+}
