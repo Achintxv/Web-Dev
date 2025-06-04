@@ -269,6 +269,10 @@ html, body{
     border-bottom: 1.5px solid #dadada;
 }
 
+.box:hover{
+    border-bottom: none;
+}
+
 .page5 h2{
     font-size: 4vw;
     font-weight: 500;
